@@ -35,6 +35,7 @@
         "serve": "^11.3.2"
     },
     "scripts": {
+        "prepare": "npm run build",
         "start": "concurrently \"rollup -c -w\" \"serve docs\"",
         "build": "rollup -c",
         "test": "ava"
